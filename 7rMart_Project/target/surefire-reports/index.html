@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Testing" class="navigator-link">
+              <span class="suite-name border-failed">Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Testing" class="navigator-link ">
+                    <span>C:\Users\Devika\eclipse-workspace\7rMart_Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Testing" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Testing" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Testing" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Testing" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Testing" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Testing" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 5 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Testing" class="hide-methods failed suite-Testing"> (hide)</a> <!-- hide-methods failed suite-Testing -->
+                      <a href="#" panel-name="suite-Testing" class="show-methods failed suite-Testing"> (show)</a> <!-- show-methods failed suite-Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.MangeCategoryTest" class="method navigator-link" hash-for-method="VerifyTheUserAbleToAddNewCategory">VerifyTheUserAbleToAddNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManageSubCategoryTest" class="method navigator-link" hash-for-method="VerifyTheUserAbleToAddNewSubCategory">VerifyTheUserAbleToAddNewSubCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.LoginTest" class="method navigator-link" hash-for-method="VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword">VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManagePageTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToAddNewPages">verifyTheUserAbleToAddNewPages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManageUsersTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToAddNewUsers">verifyTheUserAbleToAddNewUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Testing -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Testing" class="hide-methods passed suite-Testing"> (hide)</a> <!-- hide-methods passed suite-Testing -->
+                      <a href="#" panel-name="suite-Testing" class="show-methods passed suite-Testing"> (show)</a> <!-- show-methods passed suite-Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-Testing">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.MangeCategoryTest" class="method navigator-link" hash-for-method="VerifyTheUserAbleToSearchCategory">VerifyTheUserAbleToSearchCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManageSubCategoryTest" class="method navigator-link" hash-for-method="VerifyTheUserAbleToSearchSubCategory">VerifyTheUserAbleToSearchSubCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToLoginInvalidUsernameValidPassword">verifyTheUserAbleToLoginInvalidUsernameValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToLoginValidCredentials">verifyTheUserAbleToLoginValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToLoginValidUsernameInvalidPassword">verifyTheUserAbleToLoginValidUsernameInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManagePageTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToSearchPages">verifyTheUserAbleToSearchPages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManageProductTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToSearchProducts">verifyTheUserAbleToSearchProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="testscript.ManageUsersTest" class="method navigator-link" hash-for-method="verifyTheUserAbleToSearchUsers">verifyTheUserAbleToSearchUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Testing" class="panel Testing">
+          <div class="suite-Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.MangeCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTheUserAbleToAddNewCategory">
+                  </a> <!-- VerifyTheUserAbleToAddNewCategory -->
+                  <span class="method-name">VerifyTheUserAbleToAddNewCategory</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (438, 769)
+  (Session info: chrome=126.0.6478.61)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dd3472b07b2dd7dcb39170b7ea9ff1c, clickElement {id=f.CDC43FD6FECA465DE0EC8D25BDA3D795.d.BDA9E2A83D8F6F5D500334F95A0A998B.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dd3472b07b2dd7dcb39170b7ea9ff1c)] -&gt; xpath: //input[@name=&apos;top_menu&apos; and @value=&apos;yes&apos;]]
+Session ID: 1dd3472b07b2dd7dcb39170b7ea9ff1c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+	at pages.ManageCategoryClass.selectShowOnTopOption(ManageCategoryClass.java:90)
+	at testscript.MangeCategoryTest.VerifyTheUserAbleToAddNewCategory(MangeCategoryTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify whether user able to add new category)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-failed -->
+          <div class="suite-Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.ManageSubCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTheUserAbleToAddNewSubCategory">
+                  </a> <!-- VerifyTheUserAbleToAddNewSubCategory -->
+                  <span class="method-name">VerifyTheUserAbleToAddNewSubCategory</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class =&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=126.0.6478.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b534d169ba771ce222a9ac1e3a014bc, findElement {using=xpath, value=//div[@class =&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54801/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b534d169ba771ce222a9ac1e3a014bc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+	at pages.ManageSubCategory.isAlertDisplayed(ManageSubCategory.java:91)
+	at testscript.ManageSubCategoryTest.VerifyTheUserAbleToAddNewSubCategory(ManageSubCategoryTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify whether user able to add new sub category)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-failed -->
+          <div class="suite-Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword">
+                  </a> <!-- VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword -->
+                  <span class="method-name">VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword but has not been marked @Optional or defined
+in C:\Users\Devika\eclipse-workspace\7rMart_Project\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify whether user able to login with invalid username and invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-failed -->
+          <div class="suite-Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.ManagePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToAddNewPages">
+                  </a> <!-- verifyTheUserAbleToAddNewPages -->
+                  <span class="method-name">verifyTheUserAbleToAddNewPages</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 788)
+  (Session info: chrome=126.0.6478.61)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f846421fb50a512b9bb560f823b8aff, clickElement {id=f.0B860A4E22F21103ED1CF7F90A7C46BD.d.51DA654C3AAB60E0AFD52B0E7553D781.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54689/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5f846421fb50a512b9bb560f823b8aff)] -&gt; xpath: //button[@class =&apos;btn btn-danger&apos;]]
+Session ID: 5f846421fb50a512b9bb560f823b8aff
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+	at pages.ManagePageClass.submitPage(ManagePageClass.java:80)
+	at testscript.ManagePageTest.verifyTheUserAbleToAddNewPages(ManagePageTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify whether user able to add new pages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-failed -->
+          <div class="suite-Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.ManageUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToAddNewUsers">
+                  </a> <!-- verifyTheUserAbleToAddNewUsers -->
+                  <span class="method-name">verifyTheUserAbleToAddNewUsers</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class =&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=126.0.6478.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98bce4e62456e71d8b02eb3e864ff634, findElement {using=xpath, value=//div[@class =&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54753/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98bce4e62456e71d8b02eb3e864ff634
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+	at pages.ManageUsersClass.isAlertDisplayed(ManageUsersClass.java:77)
+	at testscript.ManageUsersTest.verifyTheUserAbleToAddNewUsers(ManageUsersTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify whether user able to add new users)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-failed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.MangeCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTheUserAbleToSearchCategory">
+                  </a> <!-- VerifyTheUserAbleToSearchCategory -->
+                  <span class="method-name">VerifyTheUserAbleToSearchCategory</span>
+                  <em>
+(To verify whether user able to search alredy existing category)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToSearchProducts">
+                  </a> <!-- verifyTheUserAbleToSearchProducts -->
+                  <span class="method-name">verifyTheUserAbleToSearchProducts</span>
+                  <em>
+(To verify whether user able to search alredy existing products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageSubCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTheUserAbleToSearchSubCategory">
+                  </a> <!-- VerifyTheUserAbleToSearchSubCategory -->
+                  <span class="method-name">VerifyTheUserAbleToSearchSubCategory</span>
+                  <em>
+(To verify whether user able to search alredy existing subcategory)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManagePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToSearchPages">
+                  </a> <!-- verifyTheUserAbleToSearchPages -->
+                  <span class="method-name">verifyTheUserAbleToSearchPages</span>
+                  <em>
+(To verify whether user able to search alredy existing pages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToLoginInvalidUsernameValidPassword">
+                  </a> <!-- verifyTheUserAbleToLoginInvalidUsernameValidPassword -->
+                  <span class="method-name">verifyTheUserAbleToLoginInvalidUsernameValidPassword</span>
+                  <em>
+(To verify whether user able to login with invalid username and valid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToLoginValidCredentials">
+                  </a> <!-- verifyTheUserAbleToLoginValidCredentials -->
+                  <span class="method-name">verifyTheUserAbleToLoginValidCredentials</span>
+                  <em>
+(To verify whether user able to login with valid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToLoginValidUsernameInvalidPassword">
+                  </a> <!-- verifyTheUserAbleToLoginValidUsernameInvalidPassword -->
+                  <span class="method-name">verifyTheUserAbleToLoginValidUsernameInvalidPassword</span>
+                  <em>
+(To verify whether user able to login with valid username and invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserAbleToSearchUsers">
+                  </a> <!-- verifyTheUserAbleToSearchUsers -->
+                  <span class="method-name">verifyTheUserAbleToSearchUsers</span>
+                  <em>
+(To verify whether user able to search alredy existing users)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
+        </div> <!-- panel Testing -->
+        <div panel-name="test-xml-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Devika\eclipse-workspace\7rMart_Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Testing&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestNG.xml&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testscript.MangeCategoryTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManagePageTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageProductTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageUsersTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageSubCategoryTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNG.xml --&gt;
+&lt;/suite&gt; &lt;!-- Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestNG.xml (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyTheUserAbleToLoginValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Testing');
+function tableData_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyTheUserAbleToSearchCategory')
+data.setCell(0, 2, 'testscript.MangeCategoryTest')
+data.setCell(0, 3, 5188);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyTheUserAbleToAddNewPages')
+data.setCell(1, 2, 'testscript.ManagePageTest')
+data.setCell(1, 3, 4991);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyTheUserAbleToAddNewCategory')
+data.setCell(2, 2, 'testscript.MangeCategoryTest')
+data.setCell(2, 3, 4595);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyTheUserAbleToSearchProducts')
+data.setCell(3, 2, 'testscript.ManageProductTest')
+data.setCell(3, 3, 4298);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyTheUserAbleToSearchUsers')
+data.setCell(4, 2, 'testscript.ManageUsersTest')
+data.setCell(4, 3, 3492);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'VerifyTheUserAbleToSearchSubCategory')
+data.setCell(5, 2, 'testscript.ManageSubCategoryTest')
+data.setCell(5, 3, 3451);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyTheUserAbleToSearchPages')
+data.setCell(6, 2, 'testscript.ManagePageTest')
+data.setCell(6, 3, 3409);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'VerifyTheUserAbleToAddNewSubCategory')
+data.setCell(7, 2, 'testscript.ManageSubCategoryTest')
+data.setCell(7, 3, 3209);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyTheUserAbleToAddNewUsers')
+data.setCell(8, 2, 'testscript.ManageUsersTest')
+data.setCell(8, 3, 3101);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyTheUserAbleToLoginInvalidUsernameValidPassword')
+data.setCell(9, 2, 'testscript.LoginTest')
+data.setCell(9, 3, 2618);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyTheUserAbleToLoginValidUsernameInvalidPassword')
+data.setCell(10, 2, 'testscript.LoginTest')
+data.setCell(10, 3, 2005);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyTheUserAbleToLoginValidCredentials')
+data.setCell(11, 2, 'testscript.LoginTest')
+data.setCell(11, 3, 1442);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword')
+data.setCell(12, 2, 'testscript.LoginTest')
+data.setCell(12, 3, 0);
+window.suiteTableData['Testing']= { tableData: data, tableDiv: 'times-div-Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <div id="times-div-Testing">
+              </div> <!-- times-div-Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserAbleToLoginInvalidUsernameValidPassword</span>
+                <span class="method-start">4164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToLoginInvalidUsernameValidPassword status=SUCCESS method=LoginTes...)</span>
+                <span class="method-start">6787 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">6792 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserAbleToLoginValidCredentials</span>
+                <span class="method-start">9679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToLoginValidCredentials status=SUCCESS method=LoginTest.verifyTheU...)</span>
+                <span class="method-start">11122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">11128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserAbleToLoginValidUsernameInvalidPassword</span>
+                <span class="method-start">14251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToLoginValidUsernameInvalidPassword status=SUCCESS method=LoginTes...)</span>
+                <span class="method-start">16257 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.MangeCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">16262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyTheUserAbleToAddNewCategory</span>
+                <span class="method-start">20301 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=VerifyTheUserAbleToAddNewCategory status=FAILURE method=MangeCategoryTest.VerifyThe...)</span>
+                <span class="method-start">24907 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">25340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyTheUserAbleToSearchCategory</span>
+                <span class="method-start">29867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=VerifyTheUserAbleToSearchCategory status=SUCCESS method=MangeCategoryTest.VerifyThe...)</span>
+                <span class="method-start">35056 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManagePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">35058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTheUserAbleToAddNewPages</span>
+                <span class="method-start">38295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToAddNewPages status=FAILURE method=ManagePageTest.verifyTheUserAb...)</span>
+                <span class="method-start">43291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">43811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserAbleToSearchPages</span>
+                <span class="method-start">47126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToSearchPages status=SUCCESS method=ManagePageTest.verifyTheUserAb...)</span>
+                <span class="method-start">50536 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">50539 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserAbleToSearchProducts</span>
+                <span class="method-start">53646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToSearchProducts status=SUCCESS method=ManageProductTest.verifyThe...)</span>
+                <span class="method-start">57945 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageUsersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">57946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTheUserAbleToAddNewUsers</span>
+                <span class="method-start">61535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToAddNewUsers status=FAILURE method=ManageUsersTest.verifyTheUserA...)</span>
+                <span class="method-start">64638 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">65089 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserAbleToSearchUsers</span>
+                <span class="method-start">68401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserAbleToSearchUsers status=SUCCESS method=ManageUsersTest.verifyTheUserA...)</span>
+                <span class="method-start">71894 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageSubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">71896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyTheUserAbleToAddNewSubCategory</span>
+                <span class="method-start">75028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=VerifyTheUserAbleToAddNewSubCategory status=FAILURE method=ManageSubCategoryTest.Ve...)</span>
+                <span class="method-start">78238 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">79156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyTheUserAbleToSearchSubCategory</span>
+                <span class="method-start">82793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=VerifyTheUserAbleToSearchSubCategory status=SUCCESS method=ManageSubCategoryTest.Ve...)</span>
+                <span class="method-start">86245 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

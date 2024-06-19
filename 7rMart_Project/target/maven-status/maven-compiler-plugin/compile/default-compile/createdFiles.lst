@@ -1,0 +1,15 @@
+pages\ManageCategoryClass.class
+utilities\ExtentReportUtitlity.class
+pages\ManageNewsClass.class
+pages\ManageUsersClass.class
+utilities\FakerUtility.class
+utilities\ExcelUtility.class
+pages\LoginClass.class
+utilities\FileuploadUtility.class
+pages\ManageProductsClass.class
+pages\ManageSubCategory.class
+utilities\ScreenShotCaptureUtility.class
+pages\ManagePageClass.class
+utilities\PageUtilities.class
+utilities\WaitUtility.class
+constants\Constants.class

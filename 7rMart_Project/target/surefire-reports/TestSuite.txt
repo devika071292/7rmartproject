@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 87.895 s <<< FAILURE! - in TestSuite
+testscript.LoginTest.VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword  Time elapsed: 1.226 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'username' is required by @Test on method VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword but has not been marked @Optional or defined
+in C:\Users\Devika\eclipse-workspace\7rMart_Project\testng.xml
+
+testscript.MangeCategoryTest.VerifyTheUserAbleToAddNewCategory  Time elapsed: 4.546 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (438, 769)
+  (Session info: chrome=126.0.6478.61)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dd3472b07b2dd7dcb39170b7ea9ff1c, clickElement {id=f.CDC43FD6FECA465DE0EC8D25BDA3D795.d.BDA9E2A83D8F6F5D500334F95A0A998B.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dd3472b07b2dd7dcb39170b7ea9ff1c)] -> xpath: //input[@name='top_menu' and @value='yes']]
+Session ID: 1dd3472b07b2dd7dcb39170b7ea9ff1c
+	at testscript.MangeCategoryTest.VerifyTheUserAbleToAddNewCategory(MangeCategoryTest.java:51)
+
+testscript.ManagePageTest.verifyTheUserAbleToAddNewPages  Time elapsed: 4.868 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (334, 788)
+  (Session info: chrome=126.0.6478.61)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f846421fb50a512b9bb560f823b8aff, clickElement {id=f.0B860A4E22F21103ED1CF7F90A7C46BD.d.51DA654C3AAB60E0AFD52B0E7553D781.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54689/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5f846421fb50a512b9bb560f823b8aff)] -> xpath: //button[@class ='btn btn-danger']]
+Session ID: 5f846421fb50a512b9bb560f823b8aff
+	at testscript.ManagePageTest.verifyTheUserAbleToAddNewPages(ManagePageTest.java:53)
+
+testscript.ManageUsersTest.verifyTheUserAbleToAddNewUsers  Time elapsed: 2.968 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class ='alert alert-success alert-dismissible']"}
+  (Session info: chrome=126.0.6478.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98bce4e62456e71d8b02eb3e864ff634, findElement {using=xpath, value=//div[@class ='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54753/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98bce4e62456e71d8b02eb3e864ff634
+	at testscript.ManageUsersTest.verifyTheUserAbleToAddNewUsers(ManageUsersTest.java:57)
+
+testscript.ManageSubCategoryTest.VerifyTheUserAbleToAddNewSubCategory  Time elapsed: 3.201 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class ='alert alert-success alert-dismissible']"}
+  (Session info: chrome=126.0.6478.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b534d169ba771ce222a9ac1e3a014bc, findElement {using=xpath, value=//div[@class ='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Devika\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54801/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b534d169ba771ce222a9ac1e3a014bc
+	at testscript.ManageSubCategoryTest.VerifyTheUserAbleToAddNewSubCategory(ManageSubCategoryTest.java:53)
+

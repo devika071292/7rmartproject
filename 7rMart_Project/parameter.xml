@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="username" value="abcdefg"></parameter>
+	<parameter name="password" value="hijkl"></parameter>
+  <test thread-count="5" name="parameter.xml">
+    <classes>
+      <class name="testscript.LoginTest"/>
+    </classes>
+    
+  </test> <!-- TestNG.xml -->
+</suite> <!-- Suite -->

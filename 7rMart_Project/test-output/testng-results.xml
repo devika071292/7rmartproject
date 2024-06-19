@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-18T15:02:43 IST" name="Suite" finished-at="2024-06-18T15:02:51 IST" duration-ms="8840">
+    <groups>
+      <group name="smoke">
+        <method signature="LoginTest.verifyTheUserAbleToLoginValidCredentials()[pri:0, instance:testscript.LoginTest@79207381]" name="verifyTheUserAbleToLoginValidCredentials" class="testscript.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-06-18T15:02:43 IST" name="TestNG.xml" finished-at="2024-06-18T15:02:51 IST" duration-ms="8840">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@79207381]" started-at="2024-06-18T15:02:43 IST" name="intializeBrowser" finished-at="2024-06-18T15:02:48 IST" duration-ms="5621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeBrowser -->
+        <test-method signature="verifyTheUserAbleToLoginValidCredentials()[pri:0, instance:testscript.LoginTest@79207381]" started-at="2024-06-18T15:02:48 IST" name="verifyTheUserAbleToLoginValidCredentials" description="To verify whether user able to login with valid Credentials" finished-at="2024-06-18T15:02:51 IST" duration-ms="3075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserAbleToLoginValidCredentials -->
+      </class> <!-- testscript.LoginTest -->
+    </test> <!-- TestNG.xml -->
+  </suite> <!-- Suite -->
+</testng-results>

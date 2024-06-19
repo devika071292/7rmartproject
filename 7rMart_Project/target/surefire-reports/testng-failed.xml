@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testing]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="TestNG.xml(failed)" verbose="0">
+    <classes>
+      <class name="testscript.MangeCategoryTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="VerifyTheUserAbleToAddNewCategory"/>
+          <include name="intializeBrowser"/>
+        </methods>
+      </class> <!-- testscript.MangeCategoryTest -->
+      <class name="testscript.ManageSubCategoryTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="VerifyTheUserAbleToAddNewSubCategory"/>
+          <include name="intializeBrowser"/>
+        </methods>
+      </class> <!-- testscript.ManageSubCategoryTest -->
+      <class name="testscript.ManagePageTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="intializeBrowser"/>
+          <include name="verifyTheUserAbleToAddNewPages"/>
+        </methods>
+      </class> <!-- testscript.ManagePageTest -->
+      <class name="testscript.LoginTest">
+        <methods>
+          <include name="VerifyTheUserAbleToLoginInvalidUsernameInvalidPassword"/>
+          <include name="browserQuit"/>
+          <include name="intializeBrowser"/>
+        </methods>
+      </class> <!-- testscript.LoginTest -->
+      <class name="testscript.ManageUsersTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="intializeBrowser"/>
+          <include name="verifyTheUserAbleToAddNewUsers"/>
+        </methods>
+      </class> <!-- testscript.ManageUsersTest -->
+    </classes>
+  </test> <!-- TestNG.xml(failed) -->
+</suite> <!-- Failed suite [Testing] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing">
+	<parameter name="browser" value="chrome">  </parameter>
+  <test thread-count="5" name="TestNG.xml">
+    <classes>
+		  <class name="testscript.LoginTest"/>
+      <class name="testscript.MangeCategoryTest"/>
+      <class name="testscript.ManagePageTest"/>
+      <class name="testscript.ManageProductTest"/>
+      <class name="testscript.ManageUsersTest"/>
+       <class name="testscript.ManageSubCategoryTest"/>
+    
+    </classes>
+  </test> <!-- TestNG.xml -->
+</suite> <!-- Suite -->
