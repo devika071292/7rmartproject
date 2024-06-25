@@ -62,7 +62,7 @@ public class BaseClass {
 		if (itestresult.getStatus() == ITestResult.FAILURE) {
 			scrshot = new ScreenShotCaptureUtility();
 			scrshot.captureFailureScreenShot(driver, itestresult.getName());
-			driver.quit();
+		driver.quit();
 
 		}
 
