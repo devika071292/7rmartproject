@@ -1,8 +1,11 @@
 package testscript;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import constants.Constants;
+import pages.LoginClass;
+import utilities.ExcelUtility;
 import utilities.ScreenShotCaptureUtility;
 
 import java.io.FileInputStream;
@@ -22,24 +25,21 @@ public class BaseClass {
 	public ScreenShotCaptureUtility scrshot;
 	public Properties properties;
 	public FileInputStream fis;
+	
 
 	@Parameters("browser")
-	@BeforeMethod(alwaysRun =true )
-	
+	@BeforeMethod(alwaysRun = true)
+
 	public void intializeBrowser(String browser) throws Exception {
-		try
-		{
+		try {
 			properties = new Properties();
 			fis = new FileInputStream(Constants.CONFIGFILE);
 			properties.load(fis);
-		
-			
-		}
-		catch(FileNotFoundException exception)
-		{
+
+		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
 		}
-		//driver = new ChromeDriver();
+		// driver = new ChromeDriver();
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
@@ -51,9 +51,22 @@ public class BaseClass {
 			throw new Exception("browser is not correct");
 		}
 
-		//driver.get("https://groceryapp.uniqassosiates.com/admin/login");
+		// driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		driver.get(properties.getProperty("url"));
 		driver.manage().window().maximize();
+		login(); // Perform login once after initializing the browser
+
+	}
+
+	private void login() throws IOException {
+		String username = ExcelUtility.getStringData(1, 0, "LoginPage");
+		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
+
+		LoginClass loginclass = new LoginClass(driver);
+		loginclass.enterUsername(username);
+		loginclass.enterPassword(password);
+		loginclass.submit();
+		driver.get("https://groceryapp.uniqassosiates.com/admin/home");
 
 	}
 
@@ -62,7 +75,7 @@ public class BaseClass {
 		if (itestresult.getStatus() == ITestResult.FAILURE) {
 			scrshot = new ScreenShotCaptureUtility();
 			scrshot.captureFailureScreenShot(driver, itestresult.getName());
-		driver.quit();
+			driver.quit();
 
 		}
 

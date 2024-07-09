@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T15:02:43 IST" name="Suite" finished-at="2024-06-18T15:02:51 IST" duration-ms="8840">
+  <suite started-at="2024-07-04T14:57:10 IST" name="Testing" finished-at="2024-07-04T14:57:25 IST" duration-ms="14958">
     <groups>
-      <group name="smoke">
-        <method signature="LoginTest.verifyTheUserAbleToLoginValidCredentials()[pri:0, instance:testscript.LoginTest@79207381]" name="verifyTheUserAbleToLoginValidCredentials" class="testscript.LoginTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-06-18T15:02:43 IST" name="TestNG.xml" finished-at="2024-06-18T15:02:51 IST" duration-ms="8840">
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@79207381]" started-at="2024-06-18T15:02:43 IST" name="intializeBrowser" finished-at="2024-06-18T15:02:48 IST" duration-ms="5621" status="PASS">
+    <test started-at="2024-07-04T14:57:10 IST" name="TestNG.xml" finished-at="2024-07-04T14:57:25 IST" duration-ms="14958">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@7d8995e]" started-at="2024-07-04T14:57:10 IST" name="intializeBrowser" finished-at="2024-07-04T14:57:17 IST" duration-ms="6610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,11 +18,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyTheUserAbleToLoginValidCredentials()[pri:0, instance:testscript.LoginTest@79207381]" started-at="2024-06-18T15:02:48 IST" name="verifyTheUserAbleToLoginValidCredentials" description="To verify whether user able to login with valid Credentials" finished-at="2024-06-18T15:02:51 IST" duration-ms="3075" status="PASS">
+        <test-method signature="verifyTheUserAbleToAddNewNews()[pri:0, instance:testscript.ManageNewsTest@7d8995e]" started-at="2024-07-04T14:57:17 IST" name="verifyTheUserAbleToAddNewNews" description="To verify whether user able to add new news" finished-at="2024-07-04T14:57:18 IST" duration-ms="1716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserAbleToLoginValidCredentials -->
-      </class> <!-- testscript.LoginTest -->
+        </test-method> <!-- verifyTheUserAbleToAddNewNews -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@7d8995e]" started-at="2024-07-04T14:57:18 IST" name="browserQuit" finished-at="2024-07-04T14:57:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserAbleToAddNewNews status=SUCCESS method=ManageNewsTest.verifyTheUserAbleToAddNewNews()[pri:0, instance:testscript.ManageNewsTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@7d8995e]" started-at="2024-07-04T14:57:18 IST" name="intializeBrowser" finished-at="2024-07-04T14:57:23 IST" duration-ms="4464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeBrowser -->
+        <test-method signature="verifyTheUserAbleToSearchNews()[pri:0, instance:testscript.ManageNewsTest@7d8995e]" started-at="2024-07-04T14:57:23 IST" name="verifyTheUserAbleToSearchNews" description="To verify User is able to search already existing news" finished-at="2024-07-04T14:57:25 IST" duration-ms="2065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserAbleToSearchNews -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@7d8995e]" started-at="2024-07-04T14:57:25 IST" name="browserQuit" finished-at="2024-07-04T14:57:25 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserAbleToSearchNews status=SUCCESS method=ManageNewsTest.verifyTheUserAbleToSearchNews()[pri:0, instance:testscript.ManageNewsTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageNewsTest -->
     </test> <!-- TestNG.xml -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Testing -->
 </testng-results>

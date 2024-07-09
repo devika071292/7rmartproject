@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import constants.Constants;
-import pages.LoginClass;
+//import pages.LoginClass;
 import pages.ManageUsersClass;
 import utilities.ExcelUtility;
 
@@ -16,14 +16,17 @@ public class ManageUsersTest extends BaseClass {
 	@Test(description = "To verify whether user able to search alredy existing users")
 	public void verifyTheUserAbleToSearchUsers() throws IOException {
 
-		String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage");
-		String pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		/*
+		 * String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage"); String
+		 * pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		 */
 		String username = ExcelUtility.getStringData(1, 0, "UserSearch");
 		String usertype = ExcelUtility.getStringData(1, 1, "UserSearch");
-		LoginClass loginclass = new LoginClass(driver);
-		loginclass.enterUsername(usernamevalue);
-		loginclass.enterPassword(pwdvalue);
-		loginclass.submit();
+		/*
+		 * LoginClass loginclass = new LoginClass(driver);
+		 * loginclass.enterUsername(usernamevalue); loginclass.enterPassword(pwdvalue);
+		 * loginclass.submit();
+		 */
 		ManageUsersClass manageusersclass = new ManageUsersClass(driver);
 		manageusersclass.clickManageUsersLink();
 		manageusersclass.clickMainSearchButton();
@@ -38,15 +41,18 @@ public class ManageUsersTest extends BaseClass {
 	@Test(description = "To verify whether user able to add new users")
 	public void verifyTheUserAbleToAddNewUsers() throws IOException {
 
-		String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage");
-		String pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		/*
+		 * String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage"); String
+		 * pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		 */
 		String username = ExcelUtility.getStringData(1, 0, "AddNewUser");
 		String pwd = ExcelUtility.getStringData(1, 1, "AddNewUser");
 		String usertype =ExcelUtility.getStringData(1, 2, "AddNewUser");
-		LoginClass loginclass = new LoginClass(driver);
-		loginclass.enterUsername(usernamevalue);
-		loginclass.enterPassword(pwdvalue);
-		loginclass.submit();
+		/*
+		 * LoginClass loginclass = new LoginClass(driver);
+		 * loginclass.enterUsername(usernamevalue); loginclass.enterPassword(pwdvalue);
+		 * loginclass.submit();
+		 */
 		ManageUsersClass manageusersclass = new ManageUsersClass(driver);
 		manageusersclass.clickManageUsersLink();
 		manageusersclass.clickNewUserButton();

@@ -4,12 +4,13 @@
 	<parameter name="browser" value="chrome">  </parameter>
   <test thread-count="5" name="TestNG.xml">
     <classes>
-		  <class name="testscript.LoginTest"/>
-      <class name="testscript.MangeCategoryTest"/>
+	<!--	  <class name="testscript.LoginTest"/>-->
+		   <class name="testscript.ManageNewsTest"/>
+    <!--  <class name="testscript.MangeCategoryTest"/>
       <class name="testscript.ManagePageTest"/>
       <class name="testscript.ManageProductTest"/>
       <class name="testscript.ManageUsersTest"/>
-       <class name="testscript.ManageSubCategoryTest"/>
+       <class name="testscript.ManageSubCategoryTest"/>-->
     
     </classes>
   </test> <!-- TestNG.xml -->

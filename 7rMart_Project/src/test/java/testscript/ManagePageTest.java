@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import constants.Constants;
-import pages.LoginClass;
+//import pages.LoginClass;
 import pages.ManagePageClass;
 import utilities.ExcelUtility;
 
@@ -15,13 +15,16 @@ public class ManagePageTest extends BaseClass {
 	@Test(description = "To verify whether user able to search alredy existing pages")
 	public void verifyTheUserAbleToSearchPages() throws IOException {
 
-		String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage");
-		String pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		/*
+		 * String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage"); String
+		 * pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		 */
 		String title_name = ExcelUtility.getStringData(1, 0, "PageSearch");
-		LoginClass loginclass = new LoginClass(driver);
-		loginclass.enterUsername(usernamevalue);
-		loginclass.enterPassword(pwdvalue);
-		loginclass.submit();
+		/*LoginClass loginclass = new LoginClass(driver);
+		
+		 * loginclass.enterUsername(usernamevalue); loginclass.enterPassword(pwdvalue);
+		 * loginclass.submit();
+		 */
 		ManagePageClass managepageclass = new ManagePageClass(driver);
 		managepageclass.clickManagePagesLink();
 		managepageclass.clickMainSearchButton();
@@ -35,15 +38,18 @@ public class ManagePageTest extends BaseClass {
 	@Test(description = "To verify whether user able to add new pages")
 	public void verifyTheUserAbleToAddNewPages() throws IOException {
 
-		String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage");
-		String pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		/*
+		 * String usernamevalue = ExcelUtility.getStringData(1, 0, "LoginPage"); String
+		 * pwdvalue = ExcelUtility.getStringData(1, 1, "LoginPage");
+		 */
 		String new_title_name =ExcelUtility.getStringData(1, 0, "AddNewPage");
 		String new_page_name =ExcelUtility.getStringData(1, 1, "AddNewPage");
 		String location = ExcelUtility.getStringData(1, 2, "AddNewPage");
-		LoginClass loginclass = new LoginClass(driver);
-		loginclass.enterUsername(usernamevalue);
-		loginclass.enterPassword(pwdvalue);
-		loginclass.submit();
+		/*
+		 * LoginClass loginclass = new LoginClass(driver);
+		 * loginclass.enterUsername(usernamevalue); loginclass.enterPassword(pwdvalue);
+		 * loginclass.submit();
+		 */
 		ManagePageClass managepageclass = new ManagePageClass(driver);
 		managepageclass.clickManagePagesLink();
 		managepageclass.clickAddNewPageButton();
